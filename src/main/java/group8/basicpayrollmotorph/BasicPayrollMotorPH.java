@@ -44,17 +44,60 @@ public class BasicPayrollMotorPH {
                 break;
             }
 
-            // EMPLOYEE LOGIN
-            if (username.equals(employeeUser)) {
+            // LOGIN LOOP
+            while (true) {
 
-                System.out.print("Enter your employee number: ");
-                String inputEmpNo = sc.nextLine();
+                System.out.print("\nEnter Username: ");
+                username = sc.nextLine();
 
-                displayEmployeeDetails(empFile, inputEmpNo);
+                System.out.print("Enter Password: ");
+                pass = sc.nextLine();
 
-                System.out.println("Logging out...");
-                continue; // return to login
+                if (!pass.equals(password) ||
+                        (!username.equals(employeeUser) && !username.equals(payrollUser))) {
+
+                    System.out.println("Incorrect username and/or password.");
+                    continue;
+                }
+
+                break;
             }
+
+            // EMPLOYEE LOGIN
+             if (username.equals(employeeUser)) {
+                 
+               System.out.print("Enter your employee number: ");
+               String inputEmpNo = sc.nextLine();
+            while (true) {
+                
+                System.out.println("\nEMPLOYEE MENU");
+                System.out.println("1. View Employee Details");
+                System.out.println("2. Log Out");
+                System.out.print("Choose option: ");
+
+        int choice;
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        } catch (Exception e) {
+            System.out.println("Invalid input.");
+            continue;
+        }
+
+        if (choice == 1) {
+            displayEmployeeDetails(empFile, inputEmpNo);
+        }
+
+        else if (choice == 2) {
+            System.out.println("Logging out...");
+            break; // return to login
+        }
+
+        else {
+            System.out.println("Invalid option.");
+        }
+    }
+     continue;
+}
 
             // PAYROLL STAFF LOGIN
             else if (username.equals(payrollUser)) {
