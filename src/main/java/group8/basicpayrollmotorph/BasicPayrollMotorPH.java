@@ -142,7 +142,7 @@ public class BasicPayrollMotorPH {
         }
     }
 
-    // Payroll computation
+    // Payroll computation gibby
     static void displayEmployeePayroll(String empFile, String attFile, String empNoInput) {
         String empNo = "";
         String firstName = "";
@@ -151,7 +151,7 @@ public class BasicPayrollMotorPH {
         double hourlyRate = 0;
         boolean found = false;
 
-        // GET EMPLOYEE INFO
+        // GET EMPLOYEE INFO Julius
         try (BufferedReader br = new BufferedReader(new FileReader(empFile))) {
             br.readLine(); // skip header
             String line;
@@ -224,9 +224,9 @@ public class BasicPayrollMotorPH {
                 case 11 -> "November";
                 case 12 -> "December";
                 default -> "";
-            };
+            }; // julius
 
-            // FIRST PAYOUT
+            // FIRST PAYOUT - gibby
             double gross1 = firstHalf * hourlyRate;
             double net1 = gross1;
             System.out.println("\nCutoff Date: " + monthName + " 1 to 15");
@@ -277,8 +277,8 @@ public class BasicPayrollMotorPH {
         else minutesWorked = 0;
 
         double hours = minutesWorked / 60.0;
-
+// gibby
         if (!login.isAfter(graceTime)) return 8.0;
-        return Math.min(hours, 8.0);
+        return Math.min(hours, 8.0); 
     }
 }
