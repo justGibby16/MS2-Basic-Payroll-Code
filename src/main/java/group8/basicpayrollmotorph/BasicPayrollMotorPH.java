@@ -142,7 +142,7 @@ public class BasicPayrollMotorPH {
         }
     }
 
-    // Payroll computation gibby
+    // Computes and displays payroll details including gross salary, deductions, and net salary
     static void displayEmployeePayroll(String empFile, String attFile, String empNoInput) {
         String empNo = "";
         String firstName = "";
@@ -151,7 +151,7 @@ public class BasicPayrollMotorPH {
         double hourlyRate = 0;
         boolean found = false;
 
-        // GET EMPLOYEE INFO Julius
+        // Retrieve employee information from the employee file based on employee number
         try (BufferedReader br = new BufferedReader(new FileReader(empFile))) {
             br.readLine(); // skip header
             String line;
@@ -224,9 +224,9 @@ public class BasicPayrollMotorPH {
                 case 11 -> "November";
                 case 12 -> "December";
                 default -> "";
-            }; // julius
+            }; 
 
-            // FIRST PAYOUT - gibby
+            // Compute salary for the first cutoff period (1st–15th) without deductions
             double gross1 = firstHalf * hourlyRate;
             double net1 = gross1;
             System.out.println("\nCutoff Date: " + monthName + " 1 to 15");
@@ -239,7 +239,7 @@ public class BasicPayrollMotorPH {
             totalGrossSalary += gross1;
             totalNetSalary += net1;
 
-            // SECOND PAYOUT WITH DEDUCTIONS
+            // Compute salary for the second cutoff period (16th–end of month) including deductions
             double gross2 = secondHalf * hourlyRate;
             double sss = gross2 * 0.05;
             double philhealth = gross2 * 0.03;
@@ -277,7 +277,8 @@ public class BasicPayrollMotorPH {
         else minutesWorked = 0;
 
         double hours = minutesWorked / 60.0;
-// gibby
+        
+// If employee logs in on or before grace period, count full 8 working hours
         if (!login.isAfter(graceTime)) return 8.0;
         return Math.min(hours, 8.0); 
     }
