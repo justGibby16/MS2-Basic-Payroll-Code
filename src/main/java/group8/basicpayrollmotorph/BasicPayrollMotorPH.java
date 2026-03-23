@@ -1,3 +1,20 @@
+/**
+ * This program processes employee payroll based on attendance records.
+ * It reads employee and attendance data from CSV files, computes total hours worked,
+ * calculates gross salary, applies government deductions, and displays payroll results.
+ *
+ * Key Features:
+ * - Supports two user roles: Employee and Payroll Staff
+ * - Computes hours worked based on official working schedule (8:00 AM – 5:00 PM)
+ * - Applies grace period and lunch break deduction
+ * - Calculates SSS, PhilHealth, Pag-IBIG, and tax deductions
+ * - Processes payroll per cutoff (1–15 and 16–end of month)
+ *
+ * Notes:
+ * - Attendance data is grouped per employee for efficient processing
+ * - Payroll is computed monthly and split into two cutoff periods
+ */
+
 package group8.basicpayrollmotorph;
 
 import java.io.BufferedReader;
