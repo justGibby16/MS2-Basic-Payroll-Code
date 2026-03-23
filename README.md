@@ -204,16 +204,18 @@ java group8.basicpayrollmotorph.BasicPayrollMotorPH
 
 The enhanced MotorPH Payroll System provides a more efficient and scalable solution for payroll processing. By addressing previous limitations and applying structured programming principles, the system now delivers:
 
-Accurate payroll computation
-Improved performance
-Better maintainability
-Compliance with required payroll rules
+- Accurate payroll computation
+- Improved performance
+- Better maintainability
+- Compliance with required payroll rules
 
 ---
 
 **Project Plan Link**
+```text
 * https://docs.google.com/spreadsheets/d/1dBRgeTXiUNJuw5zbtHSljKCA9ZgDH7hiGJl_bFZogwI/edit?usp=sharing
 <br> 
+```
 
 ---
 
@@ -221,12 +223,15 @@ Compliance with required payroll rules
 
 QA testing was conducted to verify the correctness, reliability, and completeness of the system. Test cases include:
 
-Valid and invalid login credentials
-Employee detail lookup
-Payroll computation for individual and multiple employees
-Attendance parsing and hour computation
-Cutoff-based payroll processing
-Deduction calculations
+- Valid and invalid login credentials
+- Employee detail lookup
+- Payroll computation for individual and multiple employees
+- Attendance parsing and hour computation
+- Cutoff-based payroll processing  
+- Deduction calculations
 
 The detailed QA testing documentation, including test cases and results, can be accessed through the link below:
+
+```text
 QA Testing Documentation: insert link
+```
