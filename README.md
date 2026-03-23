@@ -1,18 +1,17 @@
-## Team Contributions
-* Margie - Employee details and login/logout system
-   * Handled the login logic for both employee and payroll staff users.
-   * Managed the employee menu and the display of employee details.
-* Julius - Get employee info
-   * Focused on extracting employee information from the Employee Details.csv file.
-   * Worked on parsing employee data like name, birthday, and hourly rate.
-   * Assisted in linking employee data to the attendance records.
-* Gibby - Payroll calculation
-   * Responsible for the logic in computing gross and net salaries, including deductions (SSS, PhilHealth, Pag-IBIG, tax).
-   * Implemented the cutoff splits (1st–15th and 16th–end of month).
-   * Worked on the computeHours() method and the display of payroll summaries.
-* Janna - Minor adjustments
-   * Made refinements to the code for better functionality and readability.
-   * Helped small fixes across the system.
+## Team Contributions | Terminal Assessment Update
+* Margie  
+   * Updated the project plan and timeline
+   * Updated the GitHub README file
+* Julius 
+   * Performed QA testing
+   * Verified employee data retrieval accuracy
+   * Identified bugs and reported issues for fixing
+* Gibby 
+   * Fixed coding issues
+   * Implemented calculations and deductions
+   * Integrated all code
+* Janna -
+   
 ---
 **MotorPH Payroll System (TA Update)**
 
