@@ -130,10 +130,10 @@ Compared to the previous version, the system now includes:
 -Enhanced time computation logic
 -Cleaner and more maintainable codebase
 
-**Project Structure**
-group8.basicpayrollmotorph
+```text
+group8.calculator
 │
-├──BasicPayrollMotorPH.java
+├── Calculator.java
 │   ├── EmployeeInfo (class)
 │   ├── AttendanceRecord (class)
 │   ├── loadAllEmployees()
@@ -145,6 +145,7 @@ group8.basicpayrollmotorph
 │   ├── computePhilHealth()
 │   ├── computePagibig()
 │   └── computeTax()
+```
 
 **How to Run the Program**
 Ensure the following files are available:
