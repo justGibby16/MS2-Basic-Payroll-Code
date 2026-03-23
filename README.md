@@ -10,7 +10,7 @@
    * Responsible for the logic in computing gross and net salaries, including deductions (SSS, PhilHealth, Pag-IBIG, tax).
    * Implemented the cutoff splits (1st–15th and 16th–end of month).
    * Worked on the computeHours() method and the display of payroll summaries.
-* Jana - Minor adjustments
+* Janna - Minor adjustments
    * Made refinements to the code for better functionality and readability.
    * Helped small fixes across the system.
 ---
