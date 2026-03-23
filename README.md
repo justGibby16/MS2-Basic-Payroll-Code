@@ -158,9 +158,9 @@ Compared to the previous version, the system now includes:
 
 Project Structure
 ```text
-group8.calculator
+group8.basicpayrollmotorph
 │
-├── Calculator.java
+├── BasicPayrollMotorPH.java
 │   ├── EmployeeInfo (class)
 │   ├── AttendanceRecord (class)
 │   ├── loadAllEmployees()
