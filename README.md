@@ -229,6 +229,5 @@ QA testing was conducted to verify the correctness, reliability, and completenes
 
 The detailed QA testing documentation, including test cases and results, can be accessed through the link below:
 
-```text
-QA Testing Documentation: insert link
-```
+[Group08_MotorPH_QA_Test_Case_Document](https://docs.google.com/spreadsheets/d/1YMjqLh8XrMmjva8nifUVzpLgMFkZ2UD4z9LMMT0L0lM/edit?usp=sharing)
+
