@@ -16,7 +16,7 @@
 
 **MotorPH Payroll System (TA Update)**
 
-Overview
+**Overview**
 
 The Payroll System is a console-based Java application designed to simulate a structured payroll processing system for MotorPH. The program supports multiple user roles and processes employee payroll based on attendance records and government-mandated deductions.
 
@@ -28,41 +28,46 @@ The system supports two types of users:
 
 **Employee User**
 Can log in using employee credentials
+
 Can view personal information:
+```text
 Employee Number
 Full Name
 Birthday
+```
 
 **Payroll Staff User**
 Can process payroll for:
+```text
 A single employee
 All employees
 Generates detailed payroll reports per cutoff and per month
+```
 
 **Login Credentials**
-Role		
-Employee
-Username: employee	
-Password: 12345
 
-Role		
-Payroll Staff	
-Username: payroll_staff	
-Password: 12345
+| Roles | Username | Password|
+|----------|----------|----------|
+| Employee  | employee | 12345 |
+| Payroll Staff  | payroll_staff | 12345  |
 
 **System Features**
 1. Data Handling
 
 Employee data is read from:
+```text
 Employee Details.csv
+```
 Attendance data is read from:
+```text
 Attendance Record.csv
+```
 
 Data is loaded once and stored using:
-
+```text
 Map<String, EmployeeInfo>
 Map<String, List<AttendanceRecord>>
-
+```
 Improves performance by avoiding repeated file access
 
 2. Payroll Processing
@@ -96,8 +101,12 @@ The employee worked at least 5 hours
 Ensures accurate and realistic work hour computation
 
 4. Payroll Calculation
+
 Gross Salary
+```text
 Gross Salary = Hours Worked × Hourly Rate
+```
+
 Government Deductions (Applied on Monthly Gross)
 SSS – Based on salary bracket
 PhilHealth – 3% contribution (with limits)
@@ -109,13 +118,19 @@ Deductions are computed using total monthly salary and applied to the second cut
 5. Dynamic Month Handling
 
 Months are processed using a loop:
+```text
 for (int month = 6; month <= 12; month++)
+```
 
 Number of days per month is dynamically determined using:
+```text
 YearMonth.of(2024, month).lengthOfMonth()
+```
 
 Month names are generated dynamically using:
+```text
 java.time.Month
+```
 
 Eliminates hardcoded values and improves scalability
 
@@ -130,8 +145,8 @@ Compared to the previous version, the system now includes:
 -Enhanced time computation logic
 -Cleaner and more maintainable codebase
 
-```text
 Project Structure
+```text
 group8.calculator
 │
 ├── Calculator.java
@@ -148,8 +163,8 @@ group8.calculator
 │   └── computeTax()
 ```
 
-```text
 **How to Run the Program**
+```text
 Ensure the following files are available:
 Employee Details.csv
 Attendance Record.csv
