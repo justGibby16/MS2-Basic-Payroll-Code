@@ -13,7 +13,7 @@
 * Jana - Minor adjustments
    * Made refinements to the code for better functionality and readability.
    * Helped small fixes across the system.
-
+---
 **MotorPH Payroll System (TA Update)**
 
 **Overview**
