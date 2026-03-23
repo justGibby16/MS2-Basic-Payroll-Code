@@ -30,19 +30,17 @@ The system supports two types of users:
 Can log in using employee credentials
 
 Can view personal information:
-```text
-Employee Number
-Full Name
-Birthday
-```
+
+- Employee Number  
+- Full Name  
+- Birthday  
 
 **Payroll Staff User**
 Can process payroll for:
-```text
-A single employee
-All employees
-Generates detailed payroll reports per cutoff and per month
-```
+
+- A single employee  
+- All employees  
+- Generates detailed payroll reports per cutoff and per month  
 
 **Login Credentials**
 
@@ -83,20 +81,21 @@ Second Cutoff: Day 16–end of month
 
 For each employee, the system:
 
-*Calculates total hours worked per cutoff.
-*Computes gross salary using hourly rate.
-*Combines both cutoffs to determine monthly gross salary.
-*Applies government deductions only in the second cutoff.
-*Displays a detailed payroll summary.
+- Calculates total hours worked per cutoff.  
+- Computes gross salary using hourly rate.  
+- Combines both cutoffs to determine monthly gross salary.  
+- Applies government deductions only in the second cutoff.  
+- Displays a detailed payroll summary.  
+
 
 3. Attendance and Work Hour Computation
 
 The system calculates work hours based on login and logout times:
 
-+Login before 8:10 AM is adjusted to 8:00 AM (grace period)
-+Logout after 5:00 PM is capped at 5:00 PM
-+Lunch break (1 hour) is deducted if:
-+The employee worked at least 5 hours
+- Login before 8:10 AM is adjusted to 8:00 AM (grace period)  
+- Logout after 5:00 PM is capped at 5:00 PM  
+- Lunch break (1 hour) is deducted if:  
+  - The employee worked at least 5 hours  
 
 Ensures accurate and realistic work hour computation
 
@@ -109,10 +108,10 @@ Gross Salary = Hours Worked × Hourly Rate
 
 Government Deductions (Applied on Monthly Gross)
 
-+SSS – Based on salary bracket
-+PhilHealth – 3% contribution (with limits)
-+Pag-IBIG – 1%–2% capped at ₱100
-+Withholding Tax – Based on TRAIN law
+- SSS – Based on salary bracket  
+- PhilHealth – 3% contribution (with limits)  
+- Pag-IBIG – 1%–2% capped at ₱100  
+- Withholding Tax – Based on TRAIN law  
 
 Deductions are computed using total monthly salary and applied to the second cutoff only, following standard payroll practices
 
@@ -139,12 +138,12 @@ Eliminates hardcoded values and improves scalability
 
 Compared to the previous version, the system now includes:
 
-+Efficient data loading (no repeated file reading)
-+Modular structure (separate methods for each responsibility)
-+Improved variable naming for clarity
-+Correct payroll deduction logic
-+Enhanced time computation logic
-+Cleaner and more maintainable codebase
+- Efficient data loading (no repeated file reading)  
+- Modular structure (separate methods for each responsibility)  
+- Improved variable naming for clarity  
+- Correct payroll deduction logic  
+- Enhanced time computation logic  
+- Cleaner and more maintainable codebase  
 
 Project Structure
 ```text
